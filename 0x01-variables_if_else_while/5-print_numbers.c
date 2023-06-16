@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0; i < 11; i++)
 	{
-		printf("%d");
+		printf("%d", i);
 	}
 	purchar('\n');
 	return (0);
