@@ -10,7 +10,7 @@ int main(void)
 {
 	int i;
 
-	for (i = 0x41; i <= 0x5A; i++)
+	for (i = 0x61; i <= 0x7A; i++)
 	{
 		putchar(i);
 	}
