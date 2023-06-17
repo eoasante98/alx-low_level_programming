@@ -34,7 +34,7 @@ int main(void)
 			}
 			j++;
 		}
-		i++
+		i++;
 	}
 	putchar(10);
 	return (0);
