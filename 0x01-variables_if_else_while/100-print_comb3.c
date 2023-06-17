@@ -18,7 +18,7 @@ int main(void)
 		j = i + 1;
 		while (j < 58)
 		{
-			putchat(i);
+			putchar(i);
 			putchar(j);
 
 			if (i < 56 || j < 57)
