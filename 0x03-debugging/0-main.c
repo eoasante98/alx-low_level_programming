@@ -5,7 +5,7 @@
  * Return: 0
  */
 
-int main(void)
+int main(void)/*There should be a prototype function here*/
 {
 	int i;
 
