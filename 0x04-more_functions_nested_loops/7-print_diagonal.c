@@ -1,12 +1,11 @@
 #include "main.h"
 /**
- * print_line - as said
+ * print_diagonal - draws a diagonal
  *
- * @n: input value taken
- *
+ * @n: holds input value
  * Return: void
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int i, j;
 
