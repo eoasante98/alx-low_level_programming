@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "main.h"
 #include <time.h>
 /**
  * main - generates passcodes
