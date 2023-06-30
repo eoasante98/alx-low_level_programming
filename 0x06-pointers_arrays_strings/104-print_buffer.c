@@ -22,7 +22,7 @@ void print_buffer(char *b, int size)
 				if (k % 2 == 0)
 					printf(" ");
 				if (k < size)
-					printf("%.2x", *(b + k) & 0xFF);
+					printf("%.2x", *(b + k));
 				else
 					printf(" ");
 			}
