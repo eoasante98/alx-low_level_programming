@@ -9,14 +9,33 @@
  */
 char **strtow(char *str)
 {
-	char *array = NULL;
-	unsigned int i = 0, j = 0, k;
+	char **array;
+	unsigned int i, j, k, len;
+	int words = 0;
 
-	if (strncmp(str, "", 1) || str == NULL)
+	if (str == NULL || *str == '\0')
 		return (NULL);
-	array = malloc((i + j + 1) * sizeof(char));
+
+	len = strlen(str);
+
+	for (i = 0; i < len; i++)
+	{
+		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
+			words++;
+	}
+
+	array = malloc((words + 1) * sizeof(char *));
 	if (array == NULL)
 		return (NULL);
+
+	i = 0;
+	j = 0;
+
+	while (str[j] == ' ')
+		j++;
+
+	while (...
+
 	for (k = 0; k < i; k++)
 		array[k] = str[k];
 	i = k;
