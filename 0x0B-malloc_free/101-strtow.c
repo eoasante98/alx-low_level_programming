@@ -3,6 +3,56 @@
 #include <stdio.h>
 #include <string.h>
 /**
+ * count_words - ...
+ * @str: string
+ * Return: ...
+ */
+static int count_words(char *str)
+{
+	int words = 0;
+	unsigned int i, len;
+
+	len = strlen(str);
+
+	for (i = 0; i < len; i++)
+	{
+		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
+			words++;
+	}
+	return (words);
+}
+/**
+ * allocate_array - ..
+ * @words: number of words
+ * Return: pointer
+ */
+static char **allocate_array(int words)
+{
+	char **array;
+
+	array = malloc((words + 1) * sizeof(char *));
+	if (array == NULL)
+		return (NULL);
+	
+	return (array);
+}
+
+/**
+ * copy_word - ...
+ * @str: input string
+ * @start: ...
+ * @end: ending index of copied word
+ * Return: pointer to the copied word
+ */
+static char *copy_word(char *str, unsigned int start, unsigned int end)
+{
+	unsigned int length = end - start;
+	char *word;
+
+	word = malloc((length + 1) * sizeof(char));
+	if(word == NULL)
+		ret
+/**
  * strtow - concatenates arguments
  * @str: string to be split
  * Return: pointer to string array
