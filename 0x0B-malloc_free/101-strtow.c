@@ -34,16 +34,30 @@ char **strtow(char *str)
 	while (str[j] == ' ')
 		j++;
 
-	while (...
-
-	for (k = 0; k < i; k++)
-		array[k] = str[k];
-	i = k;
-	for (k = 0; k < j; k++)
+	while (j < len)
 	{
-		array[i] = str[k];
+		k = j;
+		while (str[k] != ' ' && str[k] != '\0')
+			k++;
+
+		array[i] = malloc((k - j + 1) * sizeof(char));
+		if (array[i] == NULL)
+		{
+			for (k = 0; k < i; k++)
+				free(array[k]);
+			free(array);
+			return (NULL);
+		}
+
+		strncpy(array[i], str + j, k - j);
+		array[i][k - j] = '\0';
+
 		i++;
+
+		j = k;
+		while (st[j] == ' ')
+			j++;
 	}
-	array[i] = '\0';
-	return (NULL);
+	array[i] = NULL;
+	return array;
 }
