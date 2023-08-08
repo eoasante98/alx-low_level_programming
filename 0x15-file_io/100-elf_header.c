@@ -236,5 +236,5 @@ int main(int argc, char *argv[])
 	check_sys(ptr);
 	close(fd);
 
-	return ();
+	return (0);
 }
