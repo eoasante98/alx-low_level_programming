@@ -29,7 +29,7 @@ void error_file(int file_from, int file_to, char *argv[])
  */
 int main(int argc, char *argv[])
 {
-	int file_frm, file_to, err_close;
+	int file_from, file_to, err_close;
 	ssize_t nchars, nwr;
 	char buf[1024];
 
