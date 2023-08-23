@@ -5,7 +5,7 @@
 #include <unistd.h>
 
 /* converting binary number to unsigned int*/
-unsigned int binary_to_unit(const char *b);
+unsigned int binary_to_uint(const char *b);
 
 /*prints binary representation of a number*/
 void print_binary(unsigned long int n);
