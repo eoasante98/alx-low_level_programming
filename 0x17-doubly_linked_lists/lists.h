@@ -13,7 +13,7 @@
  * Description: doubly linked list node structure
  * for ALX project
  */
-typedef strcut dlistint_s
+typedef struct dlistint_s
 {
 	int n;
 	struct dlistint_s *prev;
