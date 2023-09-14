@@ -9,7 +9,7 @@
  * Return: the address of the new element
  */
 
-dlistin_t *add_dnodeint(dlistint_t **head, const int n)
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *new;
 	dlistint_t *h;
