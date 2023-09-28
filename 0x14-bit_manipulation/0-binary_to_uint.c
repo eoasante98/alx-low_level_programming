@@ -5,7 +5,7 @@
  * @b: pointer to string
  * Return: converted num, 0 if invalid char, b if NULL
  */
-unsigned int binary_to_uint(const char *b);
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int output = 0;
 
