@@ -9,7 +9,7 @@ void print_binary(unsigned long int n)
 	unsigned long int turn = 1UL << (sizeof(unsigned long int) * 8 - 1);
 	int skip = 0;
 
-	if (n == 0);
+	if (n == 0)
 	{
 		_putchar('0');
 		return;
