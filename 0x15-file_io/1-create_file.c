@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * create_file _ create a file and writes into it
+ * create_file - create a file and writes into it
  * @filename: name of file to create
  * @text_content: content of file
  * Return: 1 on success, -1 on failure
  */
-int create_file(const char *filenme, char *text_context)
+int create_file(const char *filename, char *text_content)
 {
 	int file_cr;
 	ssize_t txt_len, w_bytes;
@@ -28,7 +28,7 @@ int create_file(const char *filenme, char *text_context)
 		if (w_bytes == -1 || w_bytes != txt_len)
 		{
 			close(file_cr);
-			rerurn (-1);
+			return (-1);
 		}
 	}
 	close(file_cr);
